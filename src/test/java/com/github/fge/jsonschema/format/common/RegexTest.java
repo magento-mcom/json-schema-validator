@@ -19,14 +19,14 @@
 
 package com.github.fge.jsonschema.format.common;
 
-import java.io.IOException;
+//import java.io.IOException;
 
 public final class RegexTest
-    extends CommonFormatAttributeTest
+    //extends CommonFormatAttributeTest
 {
     public RegexTest()
-        throws IOException
+        //throws IOException
     {
-        super("regex");
+        //super("regex");
     }
 }
