@@ -196,4 +196,13 @@ public final class JsonSchema
     {
         return doValidateUnchecked(instance, false).isSuccess();
     }
+
+    /**
+     * Provides access to the Jackson representation of the schema so that additional functionality can be
+     * derived from it.
+     * @return the root node of the schema document.
+     */
+    public JsonNode getSchemaRootNode() {
+        return schema.getBaseNode();
+    }
 }
