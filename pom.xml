@@ -11,6 +11,12 @@
     <name>Magento JSON Schema Validator (Customized)</name>
     <description>Customized version of code from https://github.com/daveclayton/json-schema-validator</description>
 
+    <properties>
+        <maven.compiler.source>1.8</maven.compiler.source>
+        <maven.compiler.target>1.8</maven.compiler.target>
+        <mcom.archiva.url>https://archiva.bcn.magento.com</mcom.archiva.url>
+    </properties>
+
     <dependencies>
         <dependency>
             <groupId>com.googlecode.libphonenumber</groupId>
@@ -82,25 +88,26 @@
         </dependency>
     </dependencies>
 
+
     <distributionManagement>
         <repository>
             <id>mcom-releases</id>
-            <url>http://archiva.gengler.org/repository/internal</url>
+            <url>${mcom.archiva.url}/repository/internal</url>
         </repository>
         <snapshotRepository>
             <id>mcom-snapshots</id>
-            <url>http://archiva.gengler.org/repository/snapshots</url>
+            <url>${mcom.archiva.url}/repository/snapshots</url>
         </snapshotRepository>
     </distributionManagement>
 
     <repositories>
         <repository>
             <id>mcom-releases</id>
-            <url>http://archiva.gengler.org/repository/internal</url>
+            <url>${mcom.archiva.url}/repository/internal</url>
         </repository>
         <repository>
             <id>mcom-snapshots</id>
-            <url>http://archiva.gengler.org/repository/snapshots</url>
+            <url>${mcom.archiva.url}/repository/snapshots</url>
         </repository>
     </repositories>
 </project>
